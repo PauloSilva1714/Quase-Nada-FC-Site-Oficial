@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const proximoJogoTitulo = document.querySelector('.proximo-jogo');
     const modalContainer = document.querySelector('.noticias');
+    const matchContainer = document.querySelector('.match-container');
+    const prevButton = document.querySelector('.ct-slide-game-prev');
+    const nextButton = document.querySelector('.ct-slide-game-next');
+    const matchInfos = Array.from(document.querySelectorAll('.match-info'));
+    let currentIndex = 0;
+
+
 
     const jogos = [
         {
@@ -259,6 +266,60 @@ jogadores: [
             
         `;
     }
+    function updateButtons() {
+        if (currentIndex === 0) {
+            prevButton.classList.add('slick-disabled');
+            prevButton.setAttribute('aria-disabled', 'true');
+        } else {
+            prevButton.classList.remove('slick-disabled');
+            prevButton.setAttribute('aria-disabled', 'false');
+        }
+  
+        if (currentIndex === matchInfos.length - 1) {
+            nextButton.classList.add('slick-disabled');
+            nextButton.setAttribute('aria-disabled', 'true');
+        } else {
+            nextButton.classList.remove('slick-disabled');
+            nextButton.setAttribute('aria-disabled', 'false');
+        }
+    }
+  
+  
+    function showMatch(index) {
+        matchInfos.forEach((matchInfo, i) => {
+            if (i === index) {
+                matchInfo.style.display = 'flex'; // ou o estilo que você usa para exibir
+            } else {
+                matchInfo.style.display = 'none';
+            }
+        });
+    }
+  
+    function goToNextMatch() {
+        if (currentIndex < matchInfos.length - 1) {
+            currentIndex++;
+            showMatch(currentIndex);
+            updateButtons();
+        }
+    }
+  
+  
+    function goToPrevMatch() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showMatch(currentIndex);
+            updateButtons();
+        }
+    }
+  
+  
+    // Eventos para os botões
+    nextButton.addEventListener('click', goToNextMatch);
+    prevButton.addEventListener('click', goToPrevMatch);
+    
+    // Inicialização
+    showMatch(currentIndex);
+    updateButtons();
 
     proximoJogoTitulo.addEventListener('click', function () {
         const modalHTML = criarModalHTML(jogos);
