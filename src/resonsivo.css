@@ -1,0 +1,365 @@
+@media (max-width: 9990px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        opacity: 0;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .nav-list.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .nav-list li.active{
+        opacity: 1;
+    }
+    .nav-list.active li {
+        animation: navLinkFade 0.5s ease-in-out forwards;
+    }
+    /* Animação dos links da navbar */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 4;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .background.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-list {
+        width: 60vw; /* Aumenta a largura em telas menores */
+    }
+
+    /* Ajusta a fonte do título principal */
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+    /* Estilos para section "noticias" em telas menores */
+    .noticias {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .match-teams {
+        flex-direction: column; /* Organiza as partidas em coluna */
+    }
+
+    .match-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .match-info {
+        width: 100%; /* Reduz a largura dos elementos de placar */
+    }
+    /* Estilos para a seção "sponsors" em telas menores */
+    .sponsor-content {
+        justify-content: center; /* Centraliza os logos */
+
+    }
+
+    .logotipo-container {
+        width: 90%; /* Largura total para cada logo */
+        max-width: none;
+    }
+    .placar-container span{
+        font-size: 1.2em; /* Reduz tamanho da fonte em telas menores */
+    }
+
+    /* Ajuste Responsivo botoes*/
+@media (max-width: 768px) {
+    .ct-slide-game-prev,
+    .ct-slide-game-next {
+        width: 30px; /* Tamanho para telas menores */
+        height: 30px; /* Tamanho para telas menores */
+        padding: 0.3rem; /* Diminui o padding também */
+    }
+    .fa-slide-icon {
+      font-size: 16px;
+    }
+}
+
+}
+
+/* Ajuste Responsivo */
+@media (max-width: 768px) {
+    .ct-slide-game-prev,
+    .ct-slide-game-next {
+        width: 30px; /* Tamanho para telas menores */
+        height: 30px; /* Tamanho para telas menores */
+        padding: 0.1rem; /* Diminui o padding também */
+    }
+    .fa-slide-icon {
+      font-size: 16px;
+    }
+    .item-resultado {
+      padding: 10px;
+      }
+  
+      .search-input {
+      width: 80%; /* Reduz a largura do campo de pesquisa */
+    }
+     .item-resultado img {
+      max-width: 100%;
+      height: auto;
+    }
+    .match-container {
+      flex-direction: row; /* Empilha os blocos um sobre o outro em telas menores */
+      align-items: center;
+    }
+    .match-info {
+      width: 100%; /* Ocupa toda a largura da tela em telas menores */
+      margin-bottom: 15px; /* Espaço entre os blocos */
+    }
+    .logotipo-container{
+      width: 80%;
+    }
+    .noticias{
+      flex-direction: row;
+      padding: 10px;
+    }
+    .match-teams{
+      flex-direction: row;
+      align-items: center;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 480px){
+    .match-container {
+      flex-direction: row; /* Empilha os blocos um sobre o outro em telas menores */
+    }
+  }
+
+  /* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    color: #000000fb;
+  }
+  
+  .hero h2 {
+    font-family: "GOT";
+    font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
+    margin-bottom: 1rem; /* Reduz a margem inferior */
+  }
+  
+  .hero p {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Adiciona margem inferior */
+  }
+  
+  .container-foto {
+    display: flex;
+    justify-content: center; /* Centraliza a foto */
+    margin-top: 1rem; /* Reduz a margem superior */
+  }
+  
+  .foto {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Alinha itens no centro horizontalmente */
+      max-width: 50%; /* Define uma largura máxima para a foto */
+      margin: auto; /* Centraliza a foto no container pai */
+      
+  }
+  
+  .foto img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .sombra-interna {
+      border: 8px solid #180d0d;
+      border-radius: 50%;
+      background: linear-gradient(to right, #f2d30b, #8f1007, #0c0706, #fff);
+      background-size: 180% 180%;
+      animation: gradient-animation 25s ease infinite;
+      -webkit-animation: AnimationName 28s ease infinite;
+      -moz-animation: AnimationName 28s ease infinite;
+      -o-animation: AnimationName 28s ease infinite;
+      animation: AnimationName 28s ease infinite;
+  }
+  
+  .sombra-interna p{
+      margin-top: 15px;
+      color: #070606;
+      text-align: center;
+      font-size: 0.7rem;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+        background-position: 0% 26%
+    }
+    50% {
+        background-position: 100% 75%
+    }
+    100% {
+        background-position: 0% 26%
+    }
+  }
+  
+  @keyframes AnimationName {
+    0% {
+        background-position: 0% 26%
+    }
+    50% {
+        background-position: 100% 75%
+    }
+    100% {
+        background-position: 0% 26%
+    }
+  }
+  
+  /* Search Section */
+  .search {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem; /* Reduz a margem superior */
+      padding: 0 1rem; /* Adiciona um pouco de padding horizontal */
+  }
+  
+  
+  .search-input {
+      width: 100%; /* O input ocupa toda a largura do container */
+      max-width: 20rem; /* Define uma largura máxima para o input */
+      border: none;
+      padding: 0.5rem;
+      border-radius: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1c1d1f;
+      font-size: 1rem;
+      box-sizing: border-box;
+  }
+  
+  .input-container {
+      display: flex;
+      width: 100%;
+      max-width: 25rem; /* Largura máxima do container do input */
+      align-items: center;
+  }
+  
+  .botao-busca {
+      outline: none;
+      background-color: #9e2b1c;
+      color: white;
+      padding: 0.7rem;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-left: 10px;
+      display: flex;
+      align-items: center; /* Alinha verticalmente o conteúdo */
+      justify-content: center; /* Alinha horizontalmente o conteúdo */
+  }
+  
+  .img-busca {
+    padding: 1px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+  }
+  
+  
+  #mensagem-erro-pesquisa {
+      color: rgb(12, 4, 4);
+      font-size: 1rem;
+      margin-top: 0.5rem; /* Reduz a margem superior */
+      text-align: center;
+      width: 100%;
+  }
+  
+  /* Media Query para telas menores */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 1rem;
+    }
+      .hero h2 {
+          font-size: 1.8rem; /* Reduz ainda mais a fonte em telas menores */
+      }
+      .search {
+          margin-top: 0.5rem;
+      }
+      .botao-busca {
+          padding: 0.5rem; /* Reduz o padding */
+          margin-left: 5px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 0.5rem;
+    }
+    .hero h2 {
+          font-size: 1.8rem; /* Reduz a fonte em telas ainda menores */
+      }
+     .sombra-interna p{
+         font-size: 1rem;
+     }
+      .foto{
+        max-width: 100%;
+      }
+      .search-input{
+           font-size: 0.9rem;
+      }
+      .botao-busca {
+        padding: 0.6rem; /* Reduz o padding */
+      }
+  }
