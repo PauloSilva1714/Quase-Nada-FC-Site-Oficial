@@ -26,7 +26,7 @@ function carregarCampeonato() {
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Quase Nada FC</td>
+              <td><img src="./src/imagens-logo-times/quasenada-icon-50.50.png" alt="Quase Nada FC" class="team-logo-table">Quase Nada FC</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
@@ -36,7 +36,7 @@ function carregarCampeonato() {
 
             <tr>
           <th scope="row">2</th>
-          <td>Familia Resenha</td>
+          <td><img src="./src/imagens-logo-times/logo-familia-resenha-para-50-49.png" alt="Familia Resenha" class="team-logo-table">Familia Resenha</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
@@ -45,7 +45,8 @@ function carregarCampeonato() {
         </tr>
         <tr>
           <th scope="row">3</th>
-          <td>Carcará U.F.C</td>
+          <td>
+            <img src="./src/imagens-logo-times/carcara-ufc-50-50.jpg" alt="Carcará U.F.C" width="50"  height="50"class="team-logo-table">Carcará U.F.C</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
@@ -54,7 +55,9 @@ function carregarCampeonato() {
         </tr>
         <tr>
           <th scope="row">4</th>
-          <td>Duarte e Amigos</td>
+
+          
+          <td> <img src="./src/imagens-logo-times/Duarte-e-amigos-50-50.png" alt="Duarte e Amigos" class="team-logo-table">Duarte e Amigos</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
