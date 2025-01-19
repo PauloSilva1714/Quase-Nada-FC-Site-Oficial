@@ -27,9 +27,9 @@ function carregarCampeonato() {
             <tr>
               <th scope="row">1</th>
               <td><img src="./src/imagens-logo-times/quasenada-icon-50.50.png" alt="Quase Nada FC" class="team-logo-table">Quase Nada FC</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>3</td> <!-- Pontos -->
+              <td>1</td> <!-- jogos -->
+              <td>1</td> <!-- vitorias -->
               <td>0</td>
               <td>0</td>
             </tr>
@@ -38,7 +38,7 @@ function carregarCampeonato() {
           <th scope="row">2</th>
           <td><img src="./src/imagens-logo-times/logo-familia-resenha-para-50-49.png" alt="Familia Resenha" class="team-logo-table">Familia Resenha</td>
           <td>0</td>
-          <td>0</td>
+          <td>1</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
@@ -46,7 +46,7 @@ function carregarCampeonato() {
         <tr>
           <th scope="row">3</th>
           <td>
-            <img src="./src/imagens-logo/carcara-ufc-50-50.jpg" alt="Carcará U.F.C" width="50"  height="50"class="team-logo-table">Carcará U.F.C</td>
+            <img src="./src/imagens-logo-times/carcara-ufc-50-50.jpg" alt="Carcará U.F.C" width="50"  height="50"class="team-logo-table">Carcará U.F.C</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
