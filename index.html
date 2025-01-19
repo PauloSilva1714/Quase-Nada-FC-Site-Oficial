@@ -4,30 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quase Nada-Site Oficial</title>
-
+    <title>Quase Nada FC - Site Oficial | Notícias, Jogos e Jogadores</title>
+    <meta name="description" content="Confira tudo sobre o Quase Nada FC: notícias, resultados dos jogos, informações dos jogadores e muito mais. Acompanhe o time que está conquistando o coração da torcida.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://seusite.com/pagina-principal">
     <link rel="icon" href="./src/imagens-logo/logo-50-49.png">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="./src/style.css" />
-
     <link rel="stylesheet" href="./src/resonsivo.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="valor_sha-512_atualizado" crossorigin="anonymous">
 
 </head>
@@ -77,117 +69,108 @@
         <div class="background"></div>
     </header>
 
-    <div class="aguia"><img src="./src/imagens/quase-nada-foto-fundo.png" alt="foto de fundo da tela aguia"></div>
-
+    <div class="aguia"><img src="./src/imagens/quase-nada-foto-fundo.png" alt="Foto de fundo da tela com a águia do time"></div>
 
     <main>
         <section class="hero">
-            <h2>Bem-vindo ao Quase Nada FC!</h2>
+            <h1>Bem-vindo ao Quase Nada FC!</h1>
             <p><strong><em>O futuro do futebol começa aqui.</em></strong></p>
             <div class="container-foto">
-                <div class="foto sombra-interna"><img src="./src/imagens/1000100593-removebg-preview.png" alt="logo-do-quase-nada">
+                <div class="foto sombra-interna"><img src="./src/imagens/1000100593-removebg-preview.png" alt="Logo do Quase Nada FC">
                     <p class="diferente"><em><strong>Diferente dos iguais</strong></em>
                     </p>
                 </div>
             </div>
         </section>
-
-        <section class="search">
+       <section class="search">
             <div class="input-container">
                 <input type="search" autocomplete="on" spellcheck="false" role="combobox" aria-controls="matches" aria-expanded="false" aria-live="polite" placeholder="Digite sua Pesquisa" id="campo-pesquisa" class="search-input">
                 <button onclick="pesquisar()" class="botao-busca">
-                    <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca">
+                    <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="Ícone de pesquisa">
                 </button>
             </div>
             <div id="mensagem-erro-pesquisa"></div>
-        </section></main>
-        <section class="noticias d-flex flex-column align-items-center py-4">
+        </section>
+    
+    </main>
+        
+   <section class="noticias d-flex flex-column align-items-center py-4">
+        <div class="match-teams d-flex flex-column align-items-center mb-4 next-match-slide slick-slide slick-current slick-active">
+            <h2 class="proximo-jogo display-6 fw-bold text-center bg-light p-1 rounded cursor-pointer transition-background"  data-slick-index="13" aria-hidden="true" style="width: 510px;" tabindex="-1"  data-bs-toggle="modal" data-bs-target="#jogosModal"> Próximo jogos</h2>
 
- <div class="match-teams d-flex flex-column align-items-center mb-4 next-match-slide slick-slide slick-current slick-active">
-                <h3 class="proximo-jogo display-6 fw-bold text-center bg-light p-1 rounded cursor-pointer transition-background"  data-slick-index="13" aria-hidden="true" style="width: 510px;" tabindex="-1"  data-bs-toggle="modal" data-bs-target="#jogosModal"> Próximo jogos</h3>
-                   
-                
-                <!-- Container para cada partida (Times e Placar) -->
-                <div class="match-container d-flex gap-4 mb-4">
-                  <button type="button" class="ct-slide-game-prev slick-arrow slick-disabled" aria-disabled="true" style=""><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                    <div class="match-info">
-                        <div class="teams-container d-flex align-items-center gap-3">
-                            <div class="team d-flex flex-column align-items-center">
-                                <figure class="mb-2">
-                                    <img src="./src/imagens-logo-times/logo-familia-resenha-para-50-49.png" alt="FRP"
-                                        class="rounded-circle img-fluid" style="width: 90px;">
-                                </figure>
-                                <span>FRP</span>
-                            </div>
-                            <span class="score fw-bold display-4 text-primary">0</span>
-                            <span class="separator display-4 text-secondary">x</span>
-                            <span class="score fw-bold display-4 text-danger">0</span>
-                            <div class="team d-flex flex-column align-items-center">
-                                <figure class="mb-2">
-                                    <img src="./src/imagens-logo-times/quasenada-icon-50.50.png" alt="QNFC"
-                                        class="rounded-circle img-fluid" style="width: 70px;">
-                                </figure>
-                                <span>QNFC</span>
-                            </div>
+            <div class="match-container d-flex gap-4 mb-4">
+                <button type="button" class="ct-slide-game-prev slick-arrow slick-disabled" aria-disabled="true" style=""><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="match-info">
+                    <div class="teams-container d-flex align-items-center gap-3">
+                        <div class="team d-flex flex-column align-items-center">
+                            <figure class="mb-2">
+                                <img src="./src/imagens-logo-times/logo-familia-resenha-para-50-49.png" alt="Logo do time FRP"
+                                    class="rounded-circle img-fluid" style="width: 90px;">
+                            </figure>
+                            <span>FRP</span>
                         </div>
-                        <!-- Placar adicionado aqui -->
-                        <div class="score-container d-flex align-items-center gap-3 mt-2">
-
-                          <div class="container">
+                        <span class="score fw-bold display-4 text-primary">0</span>
+                        <span class="separator display-4 text-secondary">x</span>
+                        <span class="score fw-bold display-4 text-danger">0</span>
+                        <div class="team d-flex flex-column align-items-center">
+                            <figure class="mb-2">
+                                <img src="./src/imagens-logo-times/quasenada-icon-50.50.png" alt="Logo do Quase Nada FC"
+                                    class="rounded-circle img-fluid" style="width: 70px;">
+                            </figure>
+                            <span>QNFC</span>
+                        </div>
+                    </div>
+                    <div class="score-container d-flex align-items-center gap-3 mt-2">
+                        <div class="container">
                             <div class="row justify-content-center">
                               <div class="row text-center">
                                 <span>19/01/2025</span>
                                 <span class="local-jogo text-light small">ANTIGO CT DO BARRA</span>
                               </div>
                             </div>
-                          </div>
-                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="match-info">
+                    <div class="teams-container d-flex align-items-center gap-3">
+                        <div class="team d-flex flex-column align-items-center">
+                            <figure class="mb-2">
+                                <img src="./src/imagens-logo-times/Duarte-e-amigos-50-50.png" alt="Logo do time Duarte e amigos"
+                                    class="rounded-circle img-fluid" style="width: 90px;">
+                            </figure>
+                            <span>Duarte</span>
+                        </div>
+                        <span class="score fw-bold display-4 text-primary">0</span>
+                        <span class="separator display-4 text-secondary">x</span>
+                        <span class="score fw-bold display-4 text-danger">0</span>
+                        <div class="team d-flex flex-column align-items-center">
+                            <figure class="mb-2">
+                                <img src="./src/imagens-logo/logo-quase-nada-76-76.png" alt="Logo do Quase Nada FC"
+                                    class="rounded-circle img-fluid" style="width: 70px;">
+                            </figure>
+                            <span>QNFC</span>
                         </div>
                     </div>
-                
-                    <div class="match-info">
-                        <div class="teams-container d-flex align-items-center gap-3">
-                            <div class="team d-flex flex-column align-items-center">
-                                <figure class="mb-2">
-                                    <img src="./src/imagens-logo-times/Duarte-e-amigos-50-50.png" alt="logo-quase-nada"
-                                        class="rounded-circle img-fluid" style="width: 90px;">
-                                </figure>
-                                <span>Duarte</span>
-                            </div>
-                            <span class="score fw-bold display-4 text-primary">0</span>
-                            <span class="separator display-4 text-secondary">x</span>
-                            <span class="score fw-bold display-4 text-danger">0</span>
-                            <div class="team d-flex flex-column align-items-center">
-                                <figure class="mb-2">
-                                    <img src="./src/imagens-logo/logo-quase-nada-76-76.png" alt="QNFC"
-                                        class="rounded-circle img-fluid" style="width: 70px;">
-                                </figure>
-                                <span>QNFC</span>
-                            </div>
-                        </div>
-                        <!-- Placar adicionado aqui -->
-                        <div class="score-container d-flex align-items-center gap-3 mt-2">
-
-                          <div class="container">
-                            <div class="row justify-content-center">
-                              <div class="row text-center">
+                   <div class="score-container d-flex align-items-center gap-3 mt-2">
+                       <div class="container">
+                           <div class="row justify-content-center">
+                            <div class="row text-center">
                                 <span>02/02/2025</span>
                                 <span class="local-jogo text-light small">ANTIGO CT DO BARRA</span>
-                              </div>
                             </div>
-                          </div>
-                            
+                           </div>
                         </div>
-                    </div>
-
-
-                    <button type="button" class="ct-slide-game-next slick-arrow" style="" aria-disabled="false"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Modal Campeonato -->
+            
+               <button type="button" class="ct-slide-game-next slick-arrow" style="" aria-disabled="false"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+           </div>
+        </div>
+    </section>
+    
+        
+    <!-- Modal Campeonato -->
         <div class="modal fade modal-fullscreen" id="campeonatoJogosModal" tabindex="-1" aria-labelledby="campeonatoJogosModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
               <div class="modal-content">
@@ -205,44 +188,38 @@
             </div>
           </div>
           
-
 <!-- Modal para cada jogo -->
 <div class="modal fade modal-fullscreen" id="jogoModal" tabindex="-1" aria-labelledby="jogoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-fullscreen modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="jogoTitulo"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jogoTitulo"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="jogoModalBody">
+           <!-- Conteúdo dinâmico -->
+         </div>
       </div>
-      <div class="modal-body" id="jogoModalBody">
-        <!-- Conteúdo dinâmico -->
-      </div>
-      
     </div>
   </div>
-</div>
-
 
     
     <!-- Modal de Pesquisa -->
-  <div class="modal fade" id="modalPesquisa" tabindex="-1" aria-labelledby="modalPesquisaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen style= width: 90%; height: 80vh">
-        <div class="modal-content text-start p-0">
-          
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalPesquisaLabel">Resultados da Pesquisa</h5>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+    <div class="modal fade" id="modalPesquisa" tabindex="-1" aria-labelledby="modalPesquisaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen style= width: 90%; height: 80vh">
+            <div class="modal-content text-start p-0">
+               
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPesquisaLabel">Resultados da Pesquisa</h5>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                 <div class="modal-body">
+                      <div id="resultados-pesquisa"></div>
+                  </div>
+              </div>
           </div>
-          <div class="modal-body">
-               <div id="resultados-pesquisa"></div>
-          </div>
-           
-          </div>
-        </div>
-      </div>
-      
-      <ul class="redes-sociais">
-          
+    </div>
+    <ul class="redes-sociais">
         <a href="https://api.whatsapp.com/send?phone=554796146645&text=%22Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Quase Nada FC!%22" title="Enviar Mensagem no Whatsapp" target="_blank"  data-text="Olá, gostaria de saber mais sobre o Quase Nada FC!">
             <i class="fab fa-whatsapp"></i>
         </a>
@@ -250,112 +227,103 @@
             <i class="fab fa-instagram"></i>
         </a>
     </ul>
-
-    <div data-v-6155f59d="" class="sponsors"><span class="sponsor-title" style="text-align: center;">Parceiros</span>
-
+     <div data-v-6155f59d="" class="sponsors"><span class="sponsor-title" style="text-align: center;">Parceiros</span>
         <div data-v-6155f59d="" class="sponsor-content">
            <div data-v-59a30009="" data-v-6155f59d="" class="logotipo-container" style="width: 200px; padding-top: 15px; border-radius: 50%;"><a data-v-59a30009="" href="https://www.ifut.com.br/" target="_blank"><img data-v-59a30009="" src="./src/imagens-logo/iFUT.png" alt="logotipo iFUT" class="image"></a>
            </div> 
            <div data-v-59a30009="" data-v-6155f59d="" class="logotipo-container" style="width: 130px; padding-top: 0px; cursor: pointer;">
-            <a data-v-59a30009="" href="https://campeonato.ifut.com.br/campeonato/campeonato-elite-society-fut-7" target="_blank" style="cursor: pointer;">
+             <a data-v-59a30009="" href="https://campeonato.ifut.com.br/campeonato/campeonato-elite-society-fut-7" target="_blank" style="cursor: pointer;">
               <img data-v-59a30009="" src="./src/imagens-logo/Campeonato-Elite-Society-Fut-7.webp" alt="logotipo Elite-Society-Fut-7" class="image">
             </a>
           </div>
         </div>
     </div>
-    
-    
-    <!-- Modal Sobre -->
-    <div class="modal fade modal-fullscreen" id="modalSobre" tabindex="-1" aria-labelledby="sobre-descricaoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen ">
-            <div class="modal-content  bg-dark text-light p-3">
-                <div class="modal-header p-0">
-                    <h5 class="modal-title" id="sobre-descricaoLabel">Sobre</h5>
-                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
 
+     <!-- Modal Sobre -->
+     <div class="modal fade modal-fullscreen" id="modalSobre" tabindex="-1" aria-labelledby="sobre-descricaoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen ">
+           <div class="modal-content  bg-dark text-light p-3">
+               <div class="modal-header p-0">
+                    <h5 class="modal-title" id="sobre-descricaoLabel">Sobre o Quase Nada FC</h5>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-content">
+               <div class="modal-content">
                     <div class="modal-body d-flex flex-column p-0" style="background-color: #0c0b0b; color: #fff;">
-                      <div class="text-center col-md-12 mb-4">                  
-                  
-                        <p> O Quase Nada FC, apesar do nome aparentemente modesto, é uma equipe que transcende as expectativas. Com um espírito de luta incansável e uma união inabalável entre jogadores e comissão técnica, eles demonstram que a paixão pelo futebol e o trabalho em equipe podem superar quaisquer obstáculos. Embora possam não ter os recursos de grandes clubes, eles compensam com garra, talento e uma estratégia inteligente em campo. O Quase Nada FC é a prova de que o sucesso no esporte vai muito além de dinheiro e estrutura, mostrando que a determinação e a paixão pelo jogo são os verdadeiros ingredientes para a vitória.</p>
-                    </div>
-                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
-                      <img src="./src/imagens/qnfc.jpg" alt="Imagem Sobre" class="img-fluid zoomable-image" style="border-radius: 15px; width: 30%;" id="imagem1">
-                      <img src="src/imagens/uniforme-2024- 095822.png" alt="uniforme1 quasenada" style="border-radius: 15px; width: 30%;" class="img-fluid zoomable-image" id="imagem2">
-                      <img src="./src/imagens/uniforme2- 2024-12-29 095843.png" alt="uniforme2 quasenada" style="border-radius: 15px; width: 30%;" class="img-fluid zoomable-image" id="imagem3">
-                      <img src="./src/imagens/Camisa-torcedor-2024-12-29 095859.png" alt="camisa torcedor" style="border-radius: 15px; width: 30%;" class="img-fluid zoomable-image" id="imagem4">
-                  </div>
-                      <div class="text-center mb-4">
+                        <div class="text-center col-md-12 mb-4">                  
+                           <p> O Quase Nada FC, apesar do nome aparentemente modesto, é uma equipe que transcende as expectativas. Com um espírito de luta incansável e uma união inabalável entre jogadores e comissão técnica, eles demonstram que a paixão pelo futebol e o trabalho em equipe podem superar quaisquer obstáculos. Embora possam não ter os recursos de grandes clubes, eles compensam com garra, talento e uma estratégia inteligente em campo. O Quase Nada FC é a prova de que o sucesso no esporte vai muito além de dinheiro e estrutura, mostrando que a determinação e a paixão pelo jogo são os verdadeiros ingredientes para a vitória.</p>
+                      </div>
+                       <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                           <img src="./src/imagens/qnfc.jpg" alt="Integrantes do Quase Nada FC reunidos" class="img-fluid zoomable-image" style="border-radius: 15px; width: 30%;" id="imagem1">
+                           <img src="src/imagens/uniforme-2024- 095822.png" alt="Primeiro uniforme do Quase Nada FC" style="border-radius: 15px; width: 30%;" class="img-fluid zoomable-image" id="imagem2">
+                           <img src="./src/imagens/uniforme2- 2024-12-29 095843.png" alt="Segundo uniforme do Quase Nada FC" style="border-radius: 15px; width: 30%;" class="img-fluid zoomable-image" id="imagem3">
+                           <img src="./src/imagens/Camisa-torcedor-2024-12-29 095859.png" alt="Camisa de torcedor do Quase Nada FC" style="border-radius: 15px; width: 30%;" class="img-fluid zoomable-image" id="imagem4">
+                       </div>
+                    <div class="text-center mb-4">
                         <video controls class="img-fluid" style="max-height: 300px; max-width: 50%; border-radius: 14px;">
-                          <source src="./src/videos/Vídeo-do-quase-nada.mp4">
+                          <source src="./src/videos/Vídeo-do-quase-nada.mp4" type="video/mp4">
                           Seu navegador não suporta vídeos HTML5.
                         </video>
                       </div>
                     </div>
-                    <div class="modal-footer p-0">
-                      <a href="https://www.instagram.com/quasenada.fc" title="Ir para o Instagram" target="_blank" class="btn btn-warning mx-auto d-block mb-2">
-                        <i class="fab fa-instagram fa-2x"></i>
-                      </a>
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>    
+                <div class="modal-footer p-0">
+                  <a href="https://www.instagram.com/quasenada.fc" title="Ir para o Instagram" target="_blank" class="btn btn-warning mx-auto d-block mb-2">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
-        </div>
+         </div>
+     </div>
+   </div>
+     <!-- Modal Jogadores -->
+      <div class="modal fade" id="modalJogadores" tabindex="-1" aria-labelledby="modalJogadoresLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="modalJogadoresLabel">Jogadores do Quase Nada FC</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <ul id="listaJogadores"></ul>
+                  </div>
+                   <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   </div>
+             </div>
+           </div>
     </div>
-    <!-- Modal Jogadores -->
-    <div class="modal fade" id="modalJogadores" tabindex="-1" aria-labelledby="modalJogadoresLabel" aria-hidden="true">
+      <!-- Modal Detalhes Jogador -->
+  
+<!-- Modal Jogador -->
+<div class="modal fade" id="modalJogador" tabindex="-1" aria-labelledby="modalJogadorLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalJogadorLabel">Detalhes do Jogador</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="detalhesJogador">
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+     </div>
+    </div>
+</div>
+    <!-- Modal Comissão Técnica -->
+    <div class="modal fade" id="modalComissaoTecnica" tabindex="-1" aria-labelledby="modalComissaoTecnicaLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalJogadoresLabel">Jogadores do Quase Nada FC</h5>
+                    <h5 class="modal-title" id="modalComissaoTecnicaLabel">Comissão Técnica do Quase Nada FC</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <ul id="listaJogadores"></ul>
+                    <ul id="listaComissaoTecnica"></ul>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-      <!-- Modal Detalhes Jogador -->
-   
-<!-- Modal Jogador -->
-<div class="modal fade" id="modalJogador" tabindex="-1" aria-labelledby="modalJogadorLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalJogadorLabel">Detalhes do Jogador</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" id="detalhesJogador">
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Modal Comissão Técnica -->
-    <div class="modal fade" id="modalComissaoTecnica" tabindex="-1" aria-labelledby="modalComissaoTecnicaLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="modalComissaoTecnicaLabel">Comissão Técnica do Quase Nada FC</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <ul id="listaComissaoTecnica"></ul>
-              </div>
-              <div class="modal-footer">
+               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              </div>
+                </div>
           </div>
       </div>
   </div>
@@ -372,12 +340,11 @@
           <!-- Detalhes da comissão técnica serão inseridos aqui pelo JavaScript -->
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
   </div>
-  
     <footer>
         <p>© Quase Nada FC - Todos os direitos reservados.</p>
         <ul class="social-media"></ul>
