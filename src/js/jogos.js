@@ -15,11 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     nome: 'Família Resenha Pará',
                     logo: './src/imagens-logo/logo-familia-resenha-para-76-75 .png',
                     jogadores: [
-                        { nome: 'Jogador 1 (Tudo)', foto: './src/imagens-jogadores/jogador44.jpg', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
-                        { nome: 'Jogador 2 (Tudo)', foto: './src/imagens-jogadores/jogador45.jpg', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
-                        { nome: 'Jogador 3 (Tudo)', foto: './src/imagens-jogadores/jogador46.jpg', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
-                        { nome: 'Jogador 4 (Tudo)', foto: './src/imagens-jogadores/jogador47.jpg', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
-                        { nome: 'Jogador 5 (Tudo)', foto: './src/imagens-jogadores/jogador48.jpg', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
+                       
+                        
                         // Adicione mais jogadores
                     ]
                 },
@@ -28,13 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     logo: './src/imagens-logo/logo-quase-nada-76-76.png',
                     jogadores: [
                         { nome: 'Jogador 1 (Quer)', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
-                        { nome: 'Jogador 3 (Quer)', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
-                        { nome: 'Jogador 4 (Quer)', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
+                        
                         // Adicione mais jogadores
                     ]
                 },
                 horario: '09:00 - 19/01/25',
-                placar: { time1: 0, time2: 0 },
+                placar: { time1: 0, time2: 1 },
                 resumo: "",
                 melhoresMomentos: [
                     { tipo: 'video', url: '' },
@@ -49,9 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     jogadores: [
                         {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
   {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Lat', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+  
   {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
  
                         // Adicione mais jogadores
@@ -63,9 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     jogadores: [
                        {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
   {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Lat', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+  
   {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
  
                         
@@ -87,10 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 logo: './src/imagens-logo-times/carcara-ufc.jpg',
 jogadores: [
     {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Lat', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+  
     {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false}
 ]},
 
@@ -99,10 +88,7 @@ nome: 'Quase Nada FC',
 logo: 'src/imagens-logo-times/logo-quase-nada-76-76.png',
 jogadores: [
     {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-    {nome: '', posicao: 'Lat', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+    
     {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false} ]},
 
  horario: '15:00 - 16/02/25',
@@ -116,6 +102,63 @@ jogadores: [
 ],
  local: "ANTIGO CT DO BARRA"
                },
+
+               {time1: 
+                {nome: 'A Definir',
+                logo: './src/imagens-logo/default-team.png',
+                jogadores: [
+                    {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+                  
+                    {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false}
+                ]},
+                
+                time2: {
+                nome: 'Quase Nada FC',
+                logo: 'src/imagens-logo-times/logo-quase-nada-76-76.png',
+                jogadores: [
+                    {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+                    
+                    {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false} ]},
+                
+                 horario: '15:00 - 16/02/25',
+                 placar: { time1: 0, time2: 0 },
+                 resumo: "O jogo entre Quase Nada FC e Família Resenha Pará foi emocionante, com muitos gols e reviravoltas. Quase Nada FC saiu vitorioso, mas Família Resenha Pará mostrou garra.",
+                 melhoresMomentos: [
+                { tipo: 'video', url: 'url_video_melhor_momento1.mp4' },
+                { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento1.jpg' },
+                { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento2.jpg' },
+                                        // Adicione mais momentos
+                ],
+                 local: "ANTIGO CT DO BARRA"
+                               },
+                               {time1: 
+                                {nome: 'A Definir',
+                                logo: './src/imagens-logo/default-team.png',
+                                jogadores: [
+                                    {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+                                  
+                                    {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false}
+                                ]},
+                                
+                                time2: {
+                                nome: 'Quase Nada FC',
+                                logo: 'src/imagens-logo-times/logo-quase-nada-76-76.png',
+                                jogadores: [
+                                    {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+                                    
+                                    {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false} ]},
+                                
+                                 horario: '15:00 - 16/02/25',
+                                 placar: { time1: 0, time2: 0 },
+                                 resumo: "O jogo entre Quase Nada FC e Família Resenha Pará foi emocionante, com muitos gols e reviravoltas. Quase Nada FC saiu vitorioso, mas Família Resenha Pará mostrou garra.",
+                                 melhoresMomentos: [
+                                { tipo: 'video', url: 'url_video_melhor_momento1.mp4' },
+                                { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento1.jpg' },
+                                { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento2.jpg' },
+                                                        // Adicione mais momentos
+                                ],
+                                 local: "ANTIGO CT DO BARRA"
+                                               },
         ];
  
 
