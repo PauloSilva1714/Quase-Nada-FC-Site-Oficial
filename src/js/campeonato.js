@@ -46,7 +46,7 @@ function carregarCampeonato() {
         <tr>
           <th scope="row">3</th>
           <td>
-            <img src="./src/imagens-logo-times/carcara-ufc-50-50.jpg" alt="Carcará U.F.C" width="50"  height="50"class="team-logo-table">Carcará U.F.C</td>
+            <img src="./src/imagens-logo/carcara-ufc-50-50.jpg" alt="Carcará U.F.C" width="50"  height="50"class="team-logo-table">Carcará U.F.C</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
