@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 placar: { time1: 0, time2: 1 },
                 resumo: "",
                 melhoresMomentos: [
-                    { tipo: 'video', url: './src/videos/Vídeo do WhatsApp de 2025-01-20 à(s) 08.04.47_9c7eef05.mp4' },
+                    { tipo: 'video', url: './src/videos/V%C3%ADdeo%20do%20WhatsApp%20de%202025-01-20%20%C3%A0(s)%2008.04.47_bad1ac14.mp4' },
                     { tipo: 'foto', url: './src/imagens/Imagem do WhatsApp de 2025-01-20 à(s) 08.05.42_645cb2d0.jpg' }
                 ],
                  local: "ANTIGO CT DO BARRA"
