@@ -35,10 +35,10 @@ const jogadores = [
   },
   {
     nome:"Arley Rezende Lacerda",
-    posicao: "#",
+    posicao: "ATA",
     foto: './src/img-jogadores/Arley-resende-lacerda.jpg',
     detalhes: {
-      partidas: 0,
+      partidas: 1,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -60,7 +60,7 @@ const jogadores = [
     posicao: "Zagueiro",
     foto: './src/img-jogadores/Davi-freire-ramos.jpeg',
     detalhes: {
-      partidas: 0,
+      partidas: 1,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -71,9 +71,9 @@ const jogadores = [
     posicao: "#",
     foto: './src/imagens-logo-times/quasenada-icon-50.50.png',
     detalhes: {
-      partidas: 0,
+      partidas: 1,
       gols: 0,
-      cartoesAmarelos: 0,
+      cartoesAmarelos: 1,
       cartoesVermelhos: 0
     }
   },
@@ -82,7 +82,7 @@ const jogadores = [
     posicao: "#",
     foto: './src/img-jogadores/Felipe Almeida dias.jpg',
     detalhes: {
-      partidas: 0,
+      partidas: 1,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -104,7 +104,7 @@ const jogadores = [
     posicao: "#",
     foto: './src/img-jogadores/João Vitor Alves da Silva.jpg',
     detalhes: {
-      partidas: 0,
+      partidas: 1,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -137,7 +137,7 @@ const jogadores = [
       posicao: "Volante",
       foto: './src/img-jogadores/max-alexandre.png',
       detalhes: {
-          partidas: 0,
+          partidas: 1,
           gols: 0,
           cartoesAmarelos: 0,
           cartoesVermelhos: 0
@@ -148,8 +148,8 @@ const jogadores = [
       posicao: "#",
       foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg',
       detalhes: {
-        partidas: 0,
-        gols: 0,
+        partidas: 1,
+        gols: 1,
         cartoesAmarelos: 0,
         cartoesVermelhos: 0
       }
@@ -159,7 +159,7 @@ const jogadores = [
       posicao: "Defensor",
       foto: './src/img-jogadores/Raimundo Cezar pereira de Lima.jpeg',
       detalhes: {
-        partidas: 0,
+        partidas: 1,
         gols: 0,
         cartoesAmarelos: 0,
         cartoesVermelhos: 0
@@ -170,7 +170,18 @@ const jogadores = [
       posicao: "Atacante",
       foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg',
       detalhes: {
-        partidas: 0,
+        partidas: 1,
+        gols: 0,
+        cartoesAmarelos: 0,
+        cartoesVermelhos: 0
+      }
+    },
+    {
+      nome: "Cristiano Tubin",
+      posicao: "#",
+      foto: './src/img-jogadores/Cristiano Tubin.jpg',
+      detalhes: {
+        partidas: 1,
         gols: 0,
         cartoesAmarelos: 0,
         cartoesVermelhos: 0
