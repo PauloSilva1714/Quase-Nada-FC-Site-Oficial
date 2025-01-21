@@ -275,7 +275,7 @@ jogadores: [
         return `
             <div class="modal fade modal-fullscreen" id="jogosModal" tabindex="-1" aria-labelledby="jogosModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-light class="table-responsive">
+                    <div class="modal-content bg-dark text-light table-responsive">
                         <div class="modal-header">
                             <h5 class="modal-title" id="jogosModalLabel">Próximos Jogos</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
