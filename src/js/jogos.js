@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     nome: 'Quase Nada FC',
                     logo: './src/imagens-logo/logo-quase-nada-76-76.png',
                     jogadores: [
-                        { nome: 'Jogador 1 (Quer)', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false },
+                        { nome: 'Rafael bastos (#)', foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg', video: null, gols: 1, cartaoAmarelo: false, cartaoVermelho: false },
+                        { nome: 'Erick corrêa', foto: './src/imagens-logo-times/quasenada-icon-50.50.png', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
                         
                         // Adicione mais jogadores
                     ]
@@ -33,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 placar: { time1: 0, time2: 1 },
                 resumo: "",
                 melhoresMomentos: [
-                    { tipo: 'video', url: '' },
-                    { tipo: 'foto', url: '' }
+                    { tipo: 'video', url: './src/videos/Vídeo do WhatsApp de 2025-01-20 à(s) 08.04.47_9c7eef05.mp4' },
+                    { tipo: 'foto', url: './src/imagens/Imagem do WhatsApp de 2025-01-20 à(s) 08.05.42_645cb2d0.jpg' }
                 ],
                  local: "ANTIGO CT DO BARRA"
             },
@@ -97,7 +98,7 @@ jogadores: [
  melhoresMomentos: [
 { tipo: 'video', url: 'url_video_melhor_momento1.mp4' },
 { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento1.jpg' },
-{ tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento2.jpg' },
+
                         // Adicione mais momentos
 ],
  local: "ANTIGO CT DO BARRA"
@@ -231,7 +232,7 @@ jogadores: [
                                                                          <span class="jogador-posicao text-light ms-1">(${jogador.posicao ? jogador.posicao : ' '})</span>
                                                                        ${jogador.gols > 0 ? `<span class="badge bg-success ms-1">Gols: ${jogador.gols}</span>` : ''}
                                                                         ${jogador.cartaoAmarelo ? '<span class="badge bg-warning ms-1">Cartão Amarelo</span>' : ''}
-                                                                        ${jogador.cartaoVermelho ? '<span class="badge bg-danger ms-1">Cartão Vermelho</span>' : ''}
+                                                                        ${jogador.cartaoVermelho ? '<span class="badge bg-danger ms-3">Cartão Vermelho</span>' : ''}
                                                                       ${jogador.video ? `<a href="${jogador.video}" class="ms-1 text-info" target="_blank">Ver Vídeo</a>` : ''}
                                                                    </div>
                                                                 </li>
@@ -274,7 +275,7 @@ jogadores: [
         return `
             <div class="modal fade modal-fullscreen" id="jogosModal" tabindex="-1" aria-labelledby="jogosModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
-                    <div class="modal-content bg-dark text-light">
+                    <div class="modal-content bg-dark text-light class="table-responsive">
                         <div class="modal-header">
                             <h5 class="modal-title" id="jogosModalLabel">Próximos Jogos</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
