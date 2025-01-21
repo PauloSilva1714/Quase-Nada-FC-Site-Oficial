@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     nome: 'Família Resenha Pará',
                     logo: './src/imagens-logo/logo-familia-resenha-para-76-75 .png',
                     jogadores: [
-                       
+                       { nome: 'Vinícius bastos (#)', foto: './src/imagens-logo/logo-familia-resenha-para-76-75 .png', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
                         
                         // Adicione mais jogadores
                     ]
@@ -168,7 +168,7 @@ jogadores: [
                 return `
                    <div class="modal fade modal-fullscreen" id="resumoModal" tabindex="-1" aria-labelledby="resumoModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen modal-dialog-scrollable table-responsive">
-                            <div class="modal-content bg-dark text-light">
+                            <div class="modal-content bg-dark text-light table-responsive">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="resumoModalLabel">Resumo do Jogo</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
