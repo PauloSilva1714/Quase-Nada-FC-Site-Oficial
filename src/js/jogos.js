@@ -167,7 +167,7 @@ jogadores: [
             function criarModalResumoHTML(jogo) {
                 return `
                    <div class="modal fade modal-fullscreen" id="resumoModal" tabindex="-1" aria-labelledby="resumoModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable" class="table-responsive>
+                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable" class="table-responsive">
                             <div class="modal-content bg-dark text-light">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="resumoModalLabel">Resumo do Jogo</h5>
