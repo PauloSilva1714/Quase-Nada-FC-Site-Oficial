@@ -229,7 +229,7 @@ jogadores: [
                                                                      <img src="${jogador.foto}" alt="${jogador.nome}" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
                                                                       <div class="jogador-info">
                                                                         <span class="jogador-nome">${jogador.nome}</span>
-                                                                         <span class="jogador-posicao text-light ms-1">(${jogador.posicao ? jogador.posicao : ' '})</span>
+                                                                         <span class="jogador-posicao text-light ms-1">${jogador.posicao ? jogador.posicao : ' '}</span>
                                                                        ${jogador.gols > 0 ? `<span class="badge bg-success ms-1">Gols: ${jogador.gols}</span>` : ''}
                                                                         ${jogador.cartaoAmarelo ? '<span class="badge bg-warning ms-1">Cartão Amarelo</span>' : ''}
                                                                         ${jogador.cartaoVermelho ? '<span class="badge bg-danger ms-3">Cartão Vermelho</span>' : ''}
