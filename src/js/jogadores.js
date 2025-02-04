@@ -161,7 +161,7 @@ const jogadores = [
       foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg',
       detalhes: {
         partidas: 2,
-        gols: 2,
+        gols: 4,
         cartoesAmarelos: 1,
         cartoesVermelhos: 0
       }
