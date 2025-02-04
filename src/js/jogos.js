@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     nome: 'Duarte e Amigos',
                     logo: './src/imagens-logo-times/Duarte-e-amigos-50-50.png',
                     jogadores: [
-                        {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+                        {nome: 'duarte', posicao: 'Ata', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false},
   {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
   
   {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
@@ -56,17 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     nome: 'Quase Nada FC',
                     logo: './src/imagens-logo-times/quasenada-icon-50.50.png',
                     jogadores: [
-                       {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
-  
-  {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+                       {nome: 'Rafael Bastos', posicao: '#', foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg', video: null, gols: 3, cartaoAmarelo: false, cartaoVermelho: false},
+                        {nome: 'wiliame nascimento', posicao: 'Ata', foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false},
  
                         
                         // Adicione mais jogadores
                     ]
                 },
-                horario: '14:30 - 02/02/25',
-                placar: { time1: 0, time2: 0 },
+                horario: '11:00 - 02/02/25',
+                placar: { time1: 0, time2: 3 },
                 resumo: "",
                 melhoresMomentos: [
                     { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento7.jpg' },
