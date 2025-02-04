@@ -30,53 +30,55 @@ function carregarCampeonato() {
              <tr>
           <th scope="row">1</th>
 
-          
-          <td> <img src="./src/imagens-logo-times/Duarte-e-amigos-50-50.png" alt="Duarte e Amigos" class="team-logo-table">Duarte e Amigos</td>
-          <td>3</td> <!-- Pontos -->
-          <td>1</td> <!-- jogos -->
-          <td>1</td> <!-- vitorias -->
-          <td>0</td> <!-- Empates -->
-          <td>0</td> <!-- Derrotas -->
-          <td>2</td> <!-- GP -->
-          <td>1</td> <!-- GC -->
-          <td>1</td> <!-- SG -->
-        </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><img src="./src/imagens-logo-times/quasenada-icon-50.50.png" alt="Quase Nada FC" class="team-logo-table">Quase Nada FC</td>
-              <td>3</td> <!-- Pontos -->
-              <td>1</td> <!-- jogos -->
-              <td>1</td> <!-- vitorias -->
+          <td><img src="./src/imagens-logo-times/quasenada-icon-50.50.png" alt="Quase Nada FC" class="team-logo-table">Quase Nada FC</td>
+              <td>6</td> <!-- Pontos -->
+              <td>2</td> <!-- jogos -->
+              <td>2</td> <!-- vitorias -->
               <td>0</td> <!-- Empates -->
               <td>0</td> <!-- Derrotas -->
-              <td>1</td> <!-- GP -->
+              <td>4</td> <!-- GP -->
               <td>0</td> <!-- GC -->
-              <td>1</td> <!-- SG -->
+              <td>4</td> <!-- SG -->
             </tr>
+            
+            <tr>
+              <th scope="row">2</th>
+
+              <td> <img src="./src/imagens-logo-times/Duarte-e-amigos-50-50.png" alt="Duarte e Amigos" class="team-logo-table">Duarte e Amigos</td>
+          <td>3</td> <!-- Pontos -->
+          <td>2</td> <!-- jogos -->
+          <td>1</td> <!-- vitorias -->
+          <td>0</td> <!-- Empates -->
+          <td>1</td> <!-- Derrotas -->
+          <td>2</td> <!-- GP -->
+          <td>4</td> <!-- GC -->
+          <td>-2</td> <!-- SG -->
+        </tr>
+              
         <tr>
           <th scope="row">3</th>
           <td>
             <img src="./src/imagens-logo-times/carcara-ufc-50-50.jpg" alt="Carcará U.F.C" width="50"  height="50"class="team-logo-table">Carcará U.F.C</td>
-          <td>0</td> <!-- Pontos -->
-          <td>1</td> <!-- jogos -->
+          <td>1</td> <!-- Pontos -->
+          <td>2</td> <!-- jogos -->
           <td>0</td> <!-- vitorias -->
-          <td>0</td> <!-- Empates -->
+          <td>1</td> <!-- Empates -->
           <td>1</td> <!-- Derrotas -->
-          <td>1</td> <!-- GP -->
-          <td>2</td> <!-- GC -->
+          <td>2</td> <!-- GP -->
+          <td>3</td> <!-- GC -->
           <td>-1</td> <!-- SG -->
         </tr>
 
         <tr>
           <th scope="row">4</th>
           <td><img src="./src/imagens-logo-times/logo-familia-resenha-para-50-49.png" alt="Familia Resenha" class="team-logo-table">Familia Resenha</td>
-          <td>0</td> <!-- Pontos -->
-          <td>1</td> <!-- jogos -->
+          <td>1</td> <!-- Pontos -->
+          <td>2</td> <!-- jogos -->
           <td>0</td> <!-- vitorias -->
-          <td>0</td> <!-- Empates -->
+          <td>1</td> <!-- Empates -->
           <td>1</td> <!-- Derrotas -->
-          <td>0</td> <!-- GP -->
-          <td>1</td> <!-- GC -->
+          <td>1</td> <!-- GP -->
+          <td>2</td> <!-- GC -->
           <td>-1</td> <!-- SG -->
         </tr>
        
