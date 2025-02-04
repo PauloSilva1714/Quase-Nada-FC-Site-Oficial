@@ -45,9 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     logo: './src/imagens-logo-times/Duarte-e-amigos-50-50.png',
                     jogadores: [
                         {nome: 'duarte', posicao: 'Ata', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false},
-  {nome: '', posicao: 'Zag', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
   
-  {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
  
                         // Adicione mais jogadores
                     ]
