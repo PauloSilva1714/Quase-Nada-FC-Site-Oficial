@@ -16,12 +16,14 @@
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         opacity: 0;
+        gap: 0;
     }
 
     .nav-list li {
         margin-left: 0;
         opacity: 0;
         transition: opacity 0.3s ease-in;
+        gap: 0;
     }
 
     .nav-list.active {
