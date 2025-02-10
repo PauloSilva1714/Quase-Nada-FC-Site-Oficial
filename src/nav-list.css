@@ -1,7 +1,5 @@
 @media (max-width: 9990px) {
-    body {
-        overflow-x: hidden;
-    }
+    
     .nav-list {
         border-radius: 0.5rem;
         position: fixed;/* Fixa a barra lateral para evitar que role para fora da tela */
@@ -19,7 +17,7 @@
         transition: transform 0.3s ease-in;
         opacity: 0; /* Começa invisível */
         gap: 0;
-        overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+
     }
 
     .nav-list li {
