@@ -1,0 +1,86 @@
+/* CSS Reset Moderno */
+
+/* Remove margens e paddings padrão de todos os elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border não afetem o tamanho total */
+}
+
+/* Define uma base para a tipografia */
+html {
+  font-size: 16px; /* Define o tamanho base da fonte */
+  scroll-behavior: smooth; /* Adiciona rolagem suave */
+}
+
+body {
+  font-family: sans-serif; /* Define a fonte padrão */
+  line-height: 1.5; /* Melhora a legibilidade */
+  overflow-x: hidden; /* Evita barra de rolagem horizontal */
+}
+
+/* Remove estilos padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove sublinhado padrão de links */
+a {
+  text-decoration: none;
+  color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
+/* Remove estilos padrão de botões */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit; /* Herda a fonte do body */
+}
+
+/* Remove bordas de imagens dentro de links */
+a img {
+  border: none;
+}
+
+/* Garante que as imagens sejam responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+/* Remove estilos padrão de formulários */
+input,
+textarea,
+select {
+  font-family: inherit; /* Herda a fonte do body */
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Remove a seta padrão do select no Firefox */
+select::-ms-expand {
+  display: none;
+}
+
+/* Adiciona acessibilidade a elementos semânticos */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}

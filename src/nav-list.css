@@ -1,82 +1,178 @@
-@media (max-width: 9990px) {
-    body {
-        overflow-x: hidden;
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding e a borda não aumentem o tamanho do elemento */
+  }
+  
+  a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do pai */
+  }
+  
+  /* Header */
+  .header {
+    background: rgb(0, 0, 0);
+    padding-inline: 126px;
+    position: relative; /* Necessário para posicionar o menu hamburger corretamente */
+  }
+  
+  
+  /* Lista de Navegação (Desktop) */
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+    display: block; /* Garante que o padding seja aplicado corretamente */
+    transition: color 0.3s ease; /* Adiciona uma transição suave na cor */
+  }
+  
+  .nav-list a:hover {
+    color: #ccc; /* Altera a cor no hover */
+  }
+  
+  /* Menu Hamburguer (Mobile) */
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    width: 30px; /* Adicionado para controlar o tamanho */
+    height: 25px; /* Ajustado para ter espaço para as linhas */
+    position: relative; /* Para posicionar ::before e ::after */
+    transition: border-top-color 0.3s ease;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    position: absolute; /* Alterado para absolute */
+    left: 0; /* Alinha as linhas horizontalmente */
+    transition: transform 0.3s ease, top 0.3s ease; /* Adiciona transições */
+  }
+  
+  .hamburger::before {
+    top: -8px; /* Posiciona a linha superior */
+  }
+  
+  .hamburger::after {
+    top: 8px; /* Posiciona a linha inferior */
+  }
+  
+  /* Media Query para Dispositivos Menores que 750px */
+  @media (max-width: 750px) {
+    /* Ajusta a altura do header em telas menores */
+    .header {
+        padding-block: 8px; /* Reduz o padding vertical */
     }
+  
+    .nav {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+  
+    /* Mostra o menu hamburger */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Estilos para a lista de navegação quando em dispositivos móveis */
     .nav-list {
-        border-radius: 0.5rem;
-        position: absolute;
-        top: 8vh;
-        right: 0; /* Começa do lado direito */
-        width:  50vw;
-        max-width: 300px; /* Limita a largura máxima da barra lateral */
-        height: 100vh; /* Ocupa toda a altura da tela */
-        background: #23232e;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around; /* espaçamento igual entre elementos, tanto horizontal quanto vertical */
-         padding-top: 8vh; /* Espaço superior para evitar sobreposição com o cabeçalho */
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        opacity: 0; /* Começa invisível */
-        gap: 0;
-
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9); /* Adiciona transparência */
+      clip-path: circle(50px at 90% -10%); /* Reduzi o raio inicial */
+      transition: clip-path 0.5s ease-in-out; /* Ajustei a transição */
+      flex-direction: column;
+      justify-content: center; /* Centraliza verticalmente */
+      align-items: center;
+      gap: 2rem; /* Adicionado um espaçamento maior entre os itens */
+      padding: 2rem; /* Adiciona um preenchimento interno */
+  
+      pointer-events: none; /* Impede a interação com os links inicialmente */
+      z-index: 999; /* Garante que o menu fique acima de outros elementos */
     }
-
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-        transition: opacity 0.3s ease-in;
-        gap: 0;
+  
+    /* Estilos para os links da lista de navegação em dispositivos móveis */
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0; /* Oculta os links inicialmente */
+      transition: opacity 0.5s ease; /* Adiciona uma transição de opacidade */
     }
-
-    .nav-list.active {
-        opacity: 1; /* Torna visível quando ativo */
-        transform: translateX(0); /* Mostra a barra lateral */
+  
+    /* Animações para os links */
+    .nav-list li:nth-child(1) a {
+      transition-delay: 0.1s;
     }
-
-    .nav-list li.active{
-        opacity: 1;
+  
+    .nav-list li:nth-child(2) a {
+      transition-delay: 0.3s;
     }
-    .nav-list.active li {
-        animation: navLinkFade 0.5s ease-in-out forwards;
+  
+    .nav-list li:nth-child(3) a {
+      transition-delay: 0.6s;
     }
-    /* Animação dos links da navbar */
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
+  
+    /* Estilos para o menu ativo */
+    .nav.active .nav-list {
+      clip-path: circle(150vh at 90% -5%); /* Aumenta o raio final */
+      pointer-events: all; /* Permite a interação com os links */
     }
-    .mobile-menu.active .line1 {
-        transform: rotate(-45deg) translate(-8px, 8px);
+  
+    .nav.active .nav-list a {
+      opacity: 1; /* Mostra os links */
     }
-
-    .mobile-menu.active .line2 {
-        opacity: 0;
+  
+    .nav.active .hamburger {
+      position: absolute; 
+      top: 16px; /* Ajusta a posição */
+      right: 16px;
+      border-top-color: transparent; /* Remove a linha superior */
     }
-
-    .mobile-menu.active .line3 {
-        transform: rotate(45deg) translate(-5px, -7px);
+  
+    /* Transições do hamburger ativo */
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+      top: 0; /* Centraliza a linha */
     }
-
-    .background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        z-index: 4;
-        transition: opacity 0.3s ease-in-out;
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: 0; /* Centraliza a linha */
     }
-    .background.active {
-        opacity: 1;
-        visibility: visible;
+  }
+  
+  /* Media Query para Telas Maiores (Tablets e Desktops) */
+  @media (min-width: 751px) {
+    .nav-list {
+      /* Estilos para a lista de navegação em telas maiores */
+      display: flex;
+      gap: 32px;
+      list-style: none;
     }
-}
+  
+    .nav-list a {
+      font-size: 18px;
+      color: #fff;
+      padding-block: 16px;
+      transition: color 0.3s ease;
+    }
+  
+    .nav-list a:hover {
+      color: #ccc;
+    }
+  }

@@ -54,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #23232e;
+  background: #000000;
   height: 10vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 0 20px;

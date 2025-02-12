@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/resete.css">
     <link rel="stylesheet" href="./src/nav-list.css">
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" href="./src/resonsivo.css">
@@ -32,15 +33,11 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">
+        <nav class="nav">
+            <a href="/">
                 <h1 class="logo">QNFC</h1>
             </a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <button class="hamburger"></button>
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="#" id="linkCampeonato" data-bs-toggle="modal" data-bs-target="#campeonatoJogosModal" style="text-decoration: none; font-size: 18px;"> 
@@ -79,7 +76,7 @@
 
     <main>
         <section class="hero">
-            <h1>Bem-vindo ao Quase Nada FC!</h1>
+            <h2>Bem-vindo ao Quase Nada FC!</h1>
             <p><strong><em>O futuro do futebol começa aqui.</em></strong></p>
             <div class="container-foto">
                 <div class="foto sombra-interna"><img src="./src/imagens/1000100593-removebg-preview.png" alt="Logo do Quase Nada FC">
@@ -105,39 +102,9 @@
             <h2 class="proximo-jogo display-6 fw-bold text-center bg-light p-1 rounded cursor-pointer transition-background"  data-slick-index="13" aria-hidden="true" style="width: 510px;" tabindex="-1"  data-bs-toggle="modal" data-bs-target="#jogosModal"> Próximo jogos</h2>
 
             <div class="match-container d-flex gap-4 mb-4">
-                <button type="button" class="ct-slide-game-prev slick-arrow slick-disabled" aria-disabled="true" style=""><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button type="button" class="ct-slide-game-prev slick-arrow slick-disabled" aria-disabled="true" ><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
               
-                <div class="match-info">
-                  <div class="teams-container d-flex align-items-center gap-3">
-                      <div class="team d-flex flex-column align-items-center">
-                          <figure class="mb-2">
-                              <img src="./src/imagens-logo-times/Duarte-e-amigos-50-50.png" alt="Logo do time Duarte e amigos"
-                                  class="rounded-circle img-fluid" style="width: 90px;">
-                          </figure>
-                          <span>Duarte</span>
-                      </div>
-                      <span class="score fw-bold display-4 text-primary">0</span>
-                      <span class="separator display-4 text-secondary">x</span>
-                      <span class="score fw-bold display-4 text-danger">3</span>
-                      <div class="team d-flex flex-column align-items-center">
-                          <figure class="mb-2">
-                              <img src="./src/imagens-logo/logo-quase-nada-76-76.png" alt="Logo do Quase Nada FC"
-                                  class="rounded-circle img-fluid" style="width: 70px;">
-                          </figure>
-                          <span>QNFC</span>
-                      </div>
-                  </div>
-                 <div class="score-container d-flex align-items-center gap-3 mt-2">
-                     <div class="container">
-                         <div class="row justify-content-center">
-                          <div class="row text-center">
-                              <span>02/02/2025</span>
-                              <span class="local-jogo text-light small">ANTIGO CT DO BARRA</span>
-                          </div>
-                         </div>
-                      </div>
-                </div>
-              </div>
+                
                 <div class="match-info">
                     <div class="teams-container d-flex align-items-center gap-3">
                         <div class="team d-flex flex-column align-items-center">

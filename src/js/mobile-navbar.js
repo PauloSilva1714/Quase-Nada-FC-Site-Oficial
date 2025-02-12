@@ -1,47 +1,15 @@
-class MobileNavbar {
-  constructor(mobileMenu, navList, navLinks) {
-    this.mobileMenu = document.querySelector(mobileMenu);
-    this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelectorAll(navLinks);
-    this.activeClass = "active";
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
 
-    this.handleClick = this.handleClick.bind(this);
-  }
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
 
-  // Anima os links da navbar para uma transição suave
-  animateLinks() {
-    this.navLinks.forEach((link, index) => {
-      link.style.animation
-        ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
-    });
-  }
+document.addEventListener("click", (event) => {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
 
-  handleClick() {
-    this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
-  }
-
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click", this.handleClick);
-  }
-
-  init() {
-    if (this.mobileMenu) {
-      this.addClickEvent();
+    if (!isClickInsideNav && !isClickOnHamburger && nav.classList.contains("active")) {
+        nav.classList.remove("active");
     }
-    return this;
-  }
-
-  
-}
-
-const mobileNavbar = new MobileNavbar(
-  ".mobile-menu",
-  ".nav-list",
-  ".nav-list li",
-);
-mobileNavbar.init();
+});
