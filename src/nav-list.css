@@ -1,11 +1,13 @@
 @media (max-width: 9990px) {
-    
+    body {
+        overflow-x: hidden;
+    }
     .nav-list {
         border-radius: 0.5rem;
-        position: fixed;/* Fixa a barra lateral para evitar que role para fora da tela */
+        position: absolute;
         top: 8vh;
         right: 0; /* Começa do lado direito */
-        width:  100%; /* Ocupa 100% da largura da tela por padrão */
+        width:  50vw;
         max-width: 300px; /* Limita a largura máxima da barra lateral */
         height: 100vh; /* Ocupa toda a altura da tela */
         background: #23232e;
