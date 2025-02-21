@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 nome: 'Quase Nada FC',
                 logo: './src/imagens-logo/logo-quase-nada-76-76.png',
                 jogadores: [
-                    { nome: 'Rafael bastos (#)', foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg', video: null, gols: 1, cartaoAmarelo: false, cartaoVermelho: false },
+                    { nome: 'Rafael bastos', foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg', video: null, gols: 1, cartaoAmarelo: false, cartaoVermelho: false },
                     { nome: 'Erick corrêa', foto: './src/imagens-logo-times/quasenada-icon-50.50.png', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
                     // Adicione mais jogadores
                 ]
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 nome: 'Duarte e Amigos',
                 logo: './src/imagens-logo-times/Duarte-e-amigos-50-50.png',
                 jogadores: [
-                    { nome: 'duarte', posicao: 'Ata', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
+                    { nome: 'duarte', posicao: '( Ata )', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
                     // Adicione mais jogadores
                 ]
             },
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 nome: 'Quase Nada FC',
                 logo: './src/imagens-logo-times/quasenada-icon-50.50.png',
                 jogadores: [
-                    { nome: 'Rafael Bastos', posicao: '#', foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg', video: null, gols: 3, cartaoAmarelo: false, cartaoVermelho: false },
-                    { nome: 'wiliame nascimento', posicao: 'Ata', foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
+                    { nome: 'Rafael Bastos', posicao: '( # )', foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg', video: null, gols: 3, cartaoAmarelo: false, cartaoVermelho: false },
+                    { nome: 'wiliame nascimento', posicao: '( Ata )', foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
                     // Adicione mais jogadores
                 ]
             },
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 nome: 'Carcará U.F.C',
                 logo: './src/imagens-logo-times/carcara-ufc.jpg',
                 jogadores: [
-                    { nome: 'Erionelson Carneiro', posicao: '', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
+                    { nome: 'Erionelson Carneiro', posicao: '( # )', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
                 ]
             },
 
@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 nome: 'Quase Nada FC',
                 logo: 'src/imagens-logo-times/logo-quase-nada-76-76.png',
                 jogadores: [
-                    { nome: 'Raimundo Lima', posicao: 'Gol', foto: './src/img-jogadores/Raimundo Cezar pereira de Lima.jpeg', video: null, gols: 2, cartaoAmarelo: false, cartaoVermelho: false },
-                    { nome: 'João Silva', posicao: 'Gol', foto: './src/img-jogadores/João Vitor Alves da Silva.jpg', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
+                    { nome: 'Raimundo Lima', posicao: '( Defen )', foto: './src/img-jogadores/Raimundo Cezar pereira de Lima.jpeg', video: null, gols: 2, cartaoAmarelo: false, cartaoVermelho: false },
+                    { nome: 'João Silva', posicao: '( # )', foto: './src/img-jogadores/João Vitor Alves da Silva.jpg', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false },
 
-                    { nome: 'Wiliame Nascimento', posicao: 'Ata', foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg', video: null, gols: 1, cartaoAmarelo: false, cartaoVermelho: false }]
+                    { nome: 'Wiliame Nascimento', posicao: '( Ata )', foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg', video: null, gols: 1, cartaoAmarelo: false, cartaoVermelho: false }]
             },
 
             horario: '15:15 - 16/02/25',
