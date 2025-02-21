@@ -6,7 +6,7 @@ const jogadores = [
    posicao: "Ata",
    foto: "./src/img-jogadores/Ademar-marques-gama.jpeg",
    detalhes: {
-     partidas: 1,
+     partidas: 2,
      gols: 0,
      cartoesAmarelos: 0,
      cartoesVermelhos: 0
@@ -39,7 +39,7 @@ const jogadores = [
     posicao: "ATA",
     foto: './src/img-jogadores/Arley-resende-lacerda.jpg',
     detalhes: {
-      partidas: 2,
+      partidas: 3,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -61,7 +61,7 @@ const jogadores = [
     posicao: "Meia",
     foto: './src/img-jogadores/Breno Luiz Costa Cardoso.jpg',
     detalhes: {
-      partidas: 1,
+      partidas: 2,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -72,7 +72,7 @@ const jogadores = [
     posicao: "Zagueiro",
     foto: './src/img-jogadores/Davi-freire-ramos.jpeg',
     detalhes: {
-      partidas: 2,
+      partidas: 3,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -83,7 +83,7 @@ const jogadores = [
     posicao: "#",
     foto: './src/imagens-logo-times/quasenada-icon-50.50.png',
     detalhes: {
-      partidas: 2,
+      partidas: 3,
       gols: 0,
       cartoesAmarelos: 1,
       cartoesVermelhos: 0
@@ -116,7 +116,7 @@ const jogadores = [
     posicao: "#",
     foto: './src/img-jogadores/João Vitor Alves da Silva.jpg',
     detalhes: {
-      partidas: 2,
+      partidas: 3,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -127,7 +127,7 @@ const jogadores = [
     posicao: "Gol",
     foto: './src/img-jogadores/Marcos Paulo da Costa Monteiro.jpg',
     detalhes: {
-      partidas: 1,
+      partidas: 2,
       gols: 0,
       cartoesAmarelos: 0,
       cartoesVermelhos: 0
@@ -149,7 +149,7 @@ const jogadores = [
       posicao: "Volante",
       foto: './src/img-jogadores/max-alexandre.png',
       detalhes: {
-          partidas: 2,
+          partidas: 3,
           gols: 0,
           cartoesAmarelos: 0,
           cartoesVermelhos: 0
@@ -160,7 +160,7 @@ const jogadores = [
       posicao: "#",
       foto: './src/img-jogadores/Rafael bispo dos Santos bastos.jpg',
       detalhes: {
-        partidas: 2,
+        partidas: 3,
         gols: 4,
         cartoesAmarelos: 1,
         cartoesVermelhos: 0
@@ -171,8 +171,8 @@ const jogadores = [
       posicao: "Defensor",
       foto: './src/img-jogadores/Raimundo Cezar pereira de Lima.jpeg',
       detalhes: {
-        partidas: 2,
-        gols: 0,
+        partidas: 3,
+        gols: 2,
         cartoesAmarelos: 0,
         cartoesVermelhos: 0
       }
@@ -182,8 +182,8 @@ const jogadores = [
       posicao: "Atacante",
       foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg',
       detalhes: {
-        partidas: 2,
-        gols: 0,
+        partidas: 3,
+        gols: 1,
         cartoesAmarelos: 1,
         cartoesVermelhos: 0
       }
@@ -193,7 +193,7 @@ const jogadores = [
       posicao: "#",
       foto: './src/img-jogadores/Cristiano Tubin.jpg',
       detalhes: {
-        partidas: 1,
+        partidas: 2,
         gols: 0,
         cartoesAmarelos: 0,
         cartoesVermelhos: 0

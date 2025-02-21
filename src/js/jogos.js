@@ -75,22 +75,22 @@ document.addEventListener('DOMContentLoaded', function () {
 {nome: 'Carcará U.F.C',
 logo: './src/imagens-logo-times/carcara-ufc.jpg',
 jogadores: [
-    {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+    {nome: 'Erionelson Carneiro', posicao: '', foto: '', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false},
   
-    {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false}
-]},
+    ]},
 
 time2: {
 nome: 'Quase Nada FC',
 logo: 'src/imagens-logo-times/logo-quase-nada-76-76.png',
 jogadores: [
-    {nome: '', posicao: 'Gol', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false},
+    {nome: 'Raimundo Lima', posicao: 'Gol', foto: './src/img-jogadores/Raimundo Cezar pereira de Lima.jpeg', video: null, gols: 2, cartaoAmarelo: false, cartaoVermelho: false},
+    {nome: 'João Silva', posicao: 'Gol', foto: './src/img-jogadores/João Vitor Alves da Silva.jpg', video: null, gols: 0, cartaoAmarelo: true, cartaoVermelho: false},
     
-    {nome: '', posicao: 'Mei', foto: '', video: null, gols: 0, cartaoAmarelo: false, cartaoVermelho: false} ]},
+    {nome: 'Wiliame Nascimento', posicao: 'Ata', foto: './src/img-jogadores/wiliame-jeferson-morais-do-nascimento.jpeg', video: null, gols: 1, cartaoAmarelo: false, cartaoVermelho: false} ]},
 
- horario: '15:00 - 16/02/25',
- placar: { time1: 0, time2: 0 },
- resumo: "O jogo entre Quase Nada FC e Família Resenha Pará foi emocionante, com muitos gols e reviravoltas. Quase Nada FC saiu vitorioso, mas Família Resenha Pará mostrou garra.",
+ horario: '15:15 - 16/02/25',
+ placar: { time1: 0, time2: 3 },
+ resumo: "",
  melhoresMomentos: [
 { tipo: 'video', url: 'url_video_melhor_momento1.mp4' },
 { tipo: 'foto', url: './src/imagens-melhores-momentos/melhor_momento1.jpg' },
